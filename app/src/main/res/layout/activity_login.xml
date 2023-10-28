@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+    tools:context=".loginActivity">        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="identifier vous"
+            android:textSize="24sp"
+            android:paddingBottom="16dp" />
+
+        <!-- EditText for 'Nom' -->
+        <!-- EditText for 'Email' -->
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="88dp"
+            android:hint="Email"
+            android:drawableLeft="@drawable/ic_mail"
+            android:inputType="textEmailAddress"
+            android:drawablePadding="8dp"
+            android:layout_marginBottom="16dp" />
+
+
+
+        <!-- EditText for 'Mot de Passe' -->
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="88dp"
+            android:layout_marginBottom="16dp"
+            android:drawableLeft="@drawable/ic_lock"
+            android:drawablePadding="8dp"
+            android:hint="Mot de Passe"
+            android:inputType="textPassword" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MOT DE PASSE OUBLIE?"
+                android:textSize="16sp"
+                android:paddingBottom="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+        <!-- Button at the bottom -->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Connectez-vous"
+            android:onClick="Ajouter"
+
+            android:paddingBottom="20dp"
+            android:layout_gravity="center_horizontal" />
+
+
+    <RelativeLayout
+        android:padding="20dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:alpha="0.7"
+            android:paddingBottom="16dp"
+
+            android:text="nouveau sur jumia:"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/text_view"
+            android:paddingBottom="16dp"
+            android:text="CREE UN COMPTE"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <View
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OU"
+            android:layout_gravity="center"
+            android:alpha="0.7"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="12dp"
+                android:background="@drawable/fb"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CONTINER AVEC FACBOOK"
+                android:layout_centerVertical="true"
+                android:alpha="0.7"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>

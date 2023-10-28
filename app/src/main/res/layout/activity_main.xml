@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <!-- Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Crée un nouveau compte"
+        android:textSize="24sp"
+        android:layout_gravity="center"
+        android:paddingBottom="16dp" />
+
+    <!-- EditText for 'Nom' -->
+    <EditText
+        android:id="@+id/Nom"
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:drawableLeft="@drawable/ic_user"
+        android:hint="Nom"
+        android:drawablePadding="8dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- EditText for 'Prenom' -->
+    <EditText
+        android:id="@+id/Prenom"
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:drawableLeft="@drawable/ic_user"
+        android:drawablePadding="8dp"
+        android:hint="Prenom"
+        android:layout_marginBottom="16dp" />
+
+    <!-- EditText for 'Mot de Passe' -->
+    <EditText
+        android:id="@+id/MotDePasse"
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:layout_marginBottom="16dp"
+        android:drawableLeft="@drawable/ic_lock"
+        android:drawablePadding="8dp"
+        android:hint="Mot de Passe"
+        android:inputType="textPassword" />
+
+    <!-- EditText for 'Email' -->
+    <EditText
+        android:id="@+id/Email"
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:hint="Email"
+        android:drawableLeft="@drawable/ic_mail"
+        android:inputType="textEmailAddress"
+        android:drawablePadding="8dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Horizontal LinearLayout for Spinner and Phone Number EditText -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="88dp"
+            android:src="@drawable/ic_phone"
+            />
+
+        <Spinner
+            android:id="@+id/spinnerCountryCode"
+            android:layout_width="6dp"
+
+            android:layout_height="88dp"
+            android:layout_weight="0.5" />
+
+        <EditText
+            android:id="@+id/PhoneNumber"
+            android:layout_width="0dp"
+            android:layout_height="88dp"
+            android:layout_weight="1"
+
+            android:hint="Mobile"
+            android:inputType="phone" />
+    </LinearLayout>
+
+    <!-- Spacer to push elements to the top -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- Button at the bottom -->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ajouter"
+        android:onClick="Ajouter"
+        android:id="@+id/registerButton"
+        android:layout_gravity="center_horizontal" />
+</LinearLayout>
